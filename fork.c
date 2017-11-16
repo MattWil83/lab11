@@ -9,13 +9,13 @@ int main(){
 	if(pid==0){
 		x++;
 		printf("In child\n");
-		printf("%i\n",x);
+		printf("%i\n",getpid());
 	}
 	else{
 		x--;
 		sleep(1);
 		printf("In parent\n");
-		printf("%i\n",x);
+		printf("%i\n",getpid());
 	}
 	return 0;
 }
